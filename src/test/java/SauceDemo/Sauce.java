@@ -36,7 +36,7 @@ public class Sauce {
 		Thread.sleep(1000);	
 		
 //scroll down Product page
-		 System.out.println("Scroll Down");;
+		System.out.println("Scroll Down");;
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 	    js.executeScript("window.scrollBy(0,-450)", "");
 	
@@ -44,7 +44,7 @@ public class Sauce {
 		Thread.sleep(2000);
 		System.out.println("Scroll Up");;
 		js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
-		//js.executeScript("window.scrollBy(0,650)", "");
+		
 //Remove 2nd product
 		driver.findElement(By.id("remove-sauce-labs-bike-light")).click();
 		Thread.sleep(1000);
@@ -70,9 +70,7 @@ public class Sauce {
 	    js.executeScript("window.scrollBy(0,-450)", "");
 	    driver.findElement(By.id("finish")).click();
 	    
-//Verify Thankyou Page
-	    //Thank you for your order!
-	   
+//Verify Thankyou Page   
 	    
 	    String BackHomeButton= driver.findElement(By.xpath("//button[contains(@class,'btn btn_primary')]")).getText();
 	    System.out.println(BackHomeButton+ " is displayed");
