@@ -1,25 +1,27 @@
-package test.sample;
+package com.testsample;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class test {
+
+public class SampleLaunch {
 	
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 		
 		System.setProperty("webdriver.gecko.driver","D:\\driver\\firefox\\geckodriver.exe");
 		
 		
 		//WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+
 		//WebDriverManager.firefoxdriver().setup();
-		//WebDriver driver = new ChromeDriver();
 		
-		WebDriver driver = new FirefoxDriver();
+		//WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.google.co.in/");
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		driver.navigate().refresh();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		driver.quit();
 
 	}
