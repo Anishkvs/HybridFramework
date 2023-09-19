@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.saucedemo.tests.ProductTest">
+        <methods>
+          <include name="loginApp"/>
+          <include name="removeProductInCart"/>
+          <include name="setUp"/>
+          <include name="scrollUpProduct"/>
+          <include name="checkOutWithoutInformation"/>
+          <include name="chooseProduct"/>
+          <include name="sortDescending"/>
+          <include name="sortLowToHigh"/>
+          <include name="checkOutWithoutPostalCode"/>
+          <include name="filterVerify"/>
+          <include name="checkOutVerify"/>
+          <include name="checkOutInformation"/>
+          <include name="tearDown"/>
+          <include name="scrollDownProduct"/>
+          <include name="checkOutWithoutLastName"/>
+          <include name="sortAscending"/>
+          <include name="sortHighToLow"/>
+        </methods>
+      </class> <!-- com.saucedemo.tests.ProductTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

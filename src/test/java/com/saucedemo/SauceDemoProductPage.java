@@ -5,16 +5,18 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import com.base.TestBase;
+import com.base.TestBase2;
+
 import org.openqa.selenium.support.ui.Select;
 
-public class SauceDemoProductPage extends TestBase {
+public class SauceDemoProductPage extends TestBase2 {
 	
 	WebDriver driver;
 	//JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 	public SauceDemoProductPage(WebDriver driver)
 	{
-		super(driver);
+		super();
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}

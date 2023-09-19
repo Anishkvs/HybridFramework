@@ -5,13 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import com.base.TestBase;
+import com.base.TestBase2;
 
-public class SauceDemoCheckOutInfoPage extends TestBase {
+public class SauceDemoCheckOutInfoPage extends TestBase2 {
 	WebDriver driver;
 	
 	public SauceDemoCheckOutInfoPage(WebDriver driver)
 	{
-		super(driver);
+		super();
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}

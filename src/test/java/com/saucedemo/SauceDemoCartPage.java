@@ -6,13 +6,14 @@ import org.openqa.selenium.support.PageFactory;
 
 
 import com.base.TestBase;
+import com.base.TestBase2;
 
-public class SauceDemoCartPage extends TestBase {
+public class SauceDemoCartPage extends TestBase2 {
 	WebDriver driver;
 	
 	public SauceDemoCartPage(WebDriver driver)
 	{
-		super(driver);
+		super();
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}

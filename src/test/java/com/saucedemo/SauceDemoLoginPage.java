@@ -6,13 +6,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.base.TestBase;
+import com.base.TestBase2;
 
-public class SauceDemoLoginPage extends TestBase {
+public class SauceDemoLoginPage extends TestBase2 {
 	WebDriver driver;
 	
 	public SauceDemoLoginPage(WebDriver driver)
 	{
-		super(driver);
+		super();
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
