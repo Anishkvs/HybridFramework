@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import com.base.TestBase;
+import org.openqa.selenium.support.ui.Select;
 
 public class SauceDemoProductPage extends TestBase {
 	
@@ -18,7 +19,7 @@ public class SauceDemoProductPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-    public void ChooseProduct() throws InterruptedException {
+    public void chooseProduct() throws InterruptedException {
 		
     	System.out.println("Choose the product");
     	//Choose product
@@ -30,7 +31,7 @@ public class SauceDemoProductPage extends TestBase {
 			
 	}
     
-    public void ScrollDownProduct() throws InterruptedException
+    public void scrollDownProduct() throws InterruptedException
     {
     	//scroll down Product page
   		System.out.println("Scroll Down");;
@@ -41,7 +42,7 @@ public class SauceDemoProductPage extends TestBase {
   	
     }
 	
-    public void ScrollUpProduct() throws InterruptedException
+    public void scrollUpProduct() throws InterruptedException
     {
     	System.out.println("Scroll Up");
     	JavascriptExecutor jse = (JavascriptExecutor) driver;
@@ -52,13 +53,47 @@ public class SauceDemoProductPage extends TestBase {
   		Thread.sleep(1000);
     
     }
-    public void ChooseCart() throws InterruptedException
+    public void chooseCart() throws InterruptedException
     {
   		driver.findElement(By.className("shopping_cart_link")).click();
     	
     }
 	
+	public void sortAscending()
+	{
+		driver.findElement(By.xpath("//select[@class='product_sort_container']")).click();
+		Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
+		list.selectByVisibleText("Name (A to Z)");
+
+	}
 	
+	public void sortDescending()
+	{
+		driver.findElement(By.xpath("//select[@class='product_sort_container']")).click();
+		Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
+		list.selectByVisibleText("Name (Z to A)");
+
+	}
+	public void sortLowToHigh()
+	{
+		driver.findElement(By.xpath("//select[@class='product_sort_container']")).click();
+		Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
+		list.selectByVisibleText("Price (low to high)");
+
+	}
+	public void sortHighToLow()
+	{
+		driver.findElement(By.xpath("//select[@class='product_sort_container']")).click();
+		Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
+		list.selectByVisibleText("Price (high to low)");
+
+	}
 	
-	
+	public void filterVerify() {
+		sortDescending();
+		sortHighToLow();
+		sortLowToHigh();
+		sortAscending();
+
+	}
 }

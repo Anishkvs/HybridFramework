@@ -3,11 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   
-    <parameter name="browser" value="firefox" />
+   
 
   
    <classes>
-      <class name="com.all.testcases.SauceDemoApplication"/>
+      <class name="com.all.testcase.SauceDemoApplication"/>
     </classes>
     
   </test> <!-- Test -->

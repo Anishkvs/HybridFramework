@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 import org.openqa.selenium.JavascriptExecutor;
 
 public class SauceDemoApplication {
@@ -14,33 +15,31 @@ public class SauceDemoApplication {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		SauceDemoLoginPage loginPage = new SauceDemoLoginPage(driver);
-		loginPage.LaunchApplication();
-		loginPage.Login();
-	//	loginPage.VerifyHomePage();
-		/*
-		 * Assert issue: Exception in thread "main" java.lang.UnsupportedClassVersionError:
-		 *  org/testng/Assert has been compiled by a more recent version of the Java Runtime 
-		 *  (class file version 55.0), this version of the Java Runtime only recognizes 
-		 *  class file versions up to 52.0
-		 */
-		
+		loginPage.launchApplication();
+		loginPage.verifyLogin();
+		loginPage.login(); Thread.sleep(2000);
+		loginPage.verifyBrowserBackAndFowardPossibilites();
+	
 		SauceDemoProductPage product = new SauceDemoProductPage(driver);
-		product.ChooseProduct();
-		product.ScrollDownProduct();
-		product.ScrollUpProduct();
-		product.ChooseCart();
+		
+		product.filterVerify();
+		product.chooseProduct();
+		product.scrollDownProduct();
+		product.scrollUpProduct();
+		product.chooseCart();
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,-450)", "");	
 
 		SauceDemoCartPage cart = new SauceDemoCartPage(driver);
-		cart.RemoveProductInCart();
-		cart.ClickOnCheckOut();
+		cart.removeProductInCart();
+		cart.clickOnCheckOut();
 		SauceDemoCheckOutInfoPage info = new SauceDemoCheckOutInfoPage(driver);
-		info.CheckoutInformation();
+		info.checkOutVerify();
+		//info.checkoutInformation();
 
 //Click on Continue
-	    driver.findElement(By.id("continue")).click();
+	   // driver.findElement(By.id("continue")).click();
 	    
 //CheckOut Overview
 	    js.executeScript("window.scrollBy(0,-450)", "");

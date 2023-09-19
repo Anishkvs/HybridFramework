@@ -17,7 +17,7 @@ public class SauceDemoCartPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	 public void RemoveProductInCart() throws InterruptedException {
+	 public void removeProductInCart() throws InterruptedException {
 		
 		//Scroll down Cart page and remove last product
 		    Thread.sleep(1000);
@@ -25,7 +25,7 @@ public class SauceDemoCartPage extends TestBase {
 		    Thread.sleep(2000);
 		}
 	 
-     public void ClickOnCheckOut() {
+     public void clickOnCheckOut() {
     	//Click on CheckOut	
     	 driver.findElement(By.id("checkout")).click();
 	}
