@@ -7,8 +7,23 @@
         <methods>
           <include name="loginApp"/>
           <include name="setUp"/>
+          <include name="removeProductInCart"/>
+          <include name="scrollUpProduct"/>
+          <include name="checkOutWithoutInformation"/>
+          <include name="chooseProduct"/>
+          <include name="sortDescending"/>
+          <include name="sortLowToHigh"/>
+          <include name="checkOutWithoutPostalCode"/>
+          <include name="filterVerify"/>
+          <include name="chooseCart"/>
+          <include name="checkOutVerify"/>
+          <include name="clickOnCheckOut"/>
           <include name="checkOutInformation"/>
           <include name="tearDown"/>
+          <include name="scrollDownProduct"/>
+          <include name="checkOutWithoutLastName"/>
+          <include name="sortAscending"/>
+          <include name="sortHighToLow"/>
         </methods>
       </class> <!-- com.saucedemo.tests.ProductTest -->
     </classes>

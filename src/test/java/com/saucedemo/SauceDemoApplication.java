@@ -5,9 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
+
+import com.base.TestBase2;
+
 import org.openqa.selenium.JavascriptExecutor;
 
-public class SauceDemoApplication {
+public class SauceDemoApplication extends TestBase2{
 	
 	public static void main(String[] args) throws InterruptedException {
 		

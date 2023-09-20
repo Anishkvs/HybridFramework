@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.listeners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.saucedemo.tests.LoginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="TC006_navigateBrowserForward"/>
+          <include name="tearDown"/>
+          <include name="TC003_validUsernameInvalidPassword"/>
+          <include name="TC005_loginWithoutCredentials"/>
+          <include name="TC002_invalidCredentials"/>
+          <include name="TC001_loginValidCredentials"/>
+          <include name="TC007_navigateBrowserBack"/>
+          <include name="TC004_validPasswordInvalidUsername"/>
+        </methods>
+      </class> <!-- com.saucedemo.tests.LoginTests -->
       <class name="com.saucedemo.tests.ProductTest">
         <methods>
           <include name="loginApp"/>
           <include name="setUp"/>
-          <include name="checkOutInformation"/>
+          <include name="TC024_verifyContinueButtonWithoutPostalCode"/>
+          <include name="TC013_sortAscendingOrder"/>
+          <include name="TC026_verifyFinishButtonInCheckoutPage"/>
+          <include name="TC025_verifyContinueButtonWithAllDetails"/>
+          <include name="TC023_verifyContinueButtonWithoutLastName"/>
+          <include name="TC017_verifyShoppingCartButton"/>
+          <include name="TC019_verifyCheckoutButton"/>
+          <include name="TC015_sortLowToHigh"/>
+          <include name="TC016_sortHighToLow"/>
           <include name="tearDown"/>
+          <include name="TC008_addToCart"/>
+          <include name="TC012_deSelectAddToCart"/>
+          <include name="TC018_verifyRemoveButton"/>
+          <include name="TC022_verifyContinueButtonWithoutFirstName"/>
+          <include name="TC014_sortDescendingOrder"/>
         </methods>
       </class> <!-- com.saucedemo.tests.ProductTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

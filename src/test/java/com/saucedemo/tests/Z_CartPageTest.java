@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.base.TestBase;
 
 
-public class CartPageTest extends TestBase {
+public class Z_CartPageTest extends TestBase {
 	
 
 	

@@ -2,22 +2,16 @@ package com.saucedemo.tests;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import com.base.TestBase;
 
 public class LoginTests extends TestBase {
 
 
-	@BeforeClass
-	public void launchApplication() {
-		//driver.get("https://www.saucedemo.com/");
-		
-	}
+	
 	@Test(priority = 5)
 	public void TC001_loginValidCredentials() {
+		//extent.createTest("TC001: Login Application");
 		driver.findElement(By.id("user-name")).sendKeys("standard_user");
 		driver.findElement(By.id("password")).sendKeys("secret_sauce");
 		driver.findElement(By.id("login-button")).click();
@@ -27,6 +21,7 @@ public class LoginTests extends TestBase {
 
 	@Test(priority = 1)
 	public void TC002_invalidCredentials() {
+		//test = extent.createTest("TC002: Login with wrong credential");
 		driver.findElement(By.id("user-name")).sendKeys("standard_user1");
 		driver.findElement(By.id("password")).sendKeys("secret_sauce1");
 		driver.findElement(By.id("login-button")).click();
@@ -37,6 +32,7 @@ public class LoginTests extends TestBase {
 
 	@Test(priority = 2)
 	public void TC004_validPasswordInvalidUsername() {
+		//test = extent.createTest("TC004: Login with wrong user");
 		driver.findElement(By.id("user-name")).sendKeys("Wrong-user");
 		driver.findElement(By.id("password")).sendKeys("secret_sauce");
 		driver.findElement(By.id("login-button")).click();
@@ -47,6 +43,7 @@ public class LoginTests extends TestBase {
 
 	@Test(priority = 3)
 	public void TC003_validUsernameInvalidPassword() {
+		//test = extent.createTest("TC003: Login with wrong password");
 		driver.findElement(By.id("user-name")).sendKeys("standard_user");
 		driver.findElement(By.id("password")).sendKeys("Wrong-pass");
 		driver.findElement(By.id("login-button")).click();
@@ -57,6 +54,7 @@ public class LoginTests extends TestBase {
 
 	@Test(priority = 4)
 	public void TC005_loginWithoutCredentials() {
+		//test = extent.createTest("TC005: Login without credential");
 		driver.findElement(By.id("user-name")).sendKeys("standard_user");
 		driver.findElement(By.id("password")).sendKeys("Wrong-pass");
 		driver.findElement(By.id("login-button")).click();
@@ -67,25 +65,15 @@ public class LoginTests extends TestBase {
 
 	@Test
 	public void TC007_navigateBrowserBack() {
+		//test = extent.createTest("TC007: Navigate Browser Back after login");
 		driver.navigate().back();
 	}
 
 	@Test
 	public void TC006_navigateBrowserForward() {
+		//test = extent.createTest("TC006: Navigate Browser Forward before login");
 		driver.navigate().forward();
 	}
-
-//	@Test
-//	public void verifyLogin() {
-//		wrongCredentialLogin();
-//		wrongUserLogin();
-//		wrongPassLogin();
-//		withoutCredentialLogin();
-//
-//	}
-
-	
-	
 
 	
 	private void verifyHomePageTitle() {
@@ -94,10 +82,11 @@ public class LoginTests extends TestBase {
 		String ActualTitle = driver.getTitle();
 		Assert.assertEquals(ActualTitle, ExpectedTitle);
 		System.out.println("Launch Product page");
-
+		//driver.quit();
 	}
 	
 	public void AfterTest() {
+		
 		driver.quit();
 
 	}

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.base.TestBase;
 
-public class CheckOutInfoTest extends TestBase {
+public class Z_CheckOutInfoTest extends TestBase {
 	
 	
 
