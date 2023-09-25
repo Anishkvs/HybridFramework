@@ -7,7 +7,6 @@ import com.base.TestBase;
 
 public class LoginTests extends TestBase {
 
-
 	
 	@Test(priority = 5)
 	public void TC001_loginValidCredentials() {

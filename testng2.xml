@@ -3,10 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.saucedemo.SauceDemoProductPage"/>
+    <class name="com.launch.LaunchThree"/>
+    
+      <!--<class name="com.saucedemo.SauceDemoProductPage"/>
       <class name="com.saucedemo.SauceDemoLoginPage"/>
       <class name="com.saucedemo.SauceDemoCartPage"/>
-      <class name="com.saucedemo.SauceDemoCheckOutInfoPage"/>
+      <class name="com.saucedemo.SauceDemoCheckOutInfoPage"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -4,7 +4,6 @@ import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -55,13 +54,12 @@ public class CustomListeners implements ITestListener, ISuiteListener {
 		extent.setSystemInfo("Company", "Aspire");
 		extent.setSystemInfo("Build No", "v1.7");
 		
+		
 		//return extent;
-
-	
 	}
 
 	public void onFinish(ITestContext context) {
-		extent.flush();
+		//extent.flush();
 	}
 
 }

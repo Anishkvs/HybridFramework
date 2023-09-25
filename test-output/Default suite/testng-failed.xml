@@ -3,29 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.saucedemo.tests.ProductTest">
+      <class name="com.page.object.SauceDemoApplication">
         <methods>
-          <include name="loginApp"/>
           <include name="setUp"/>
-          <include name="removeProductInCart"/>
-          <include name="scrollUpProduct"/>
-          <include name="checkOutWithoutInformation"/>
-          <include name="chooseProduct"/>
-          <include name="sortDescending"/>
-          <include name="sortLowToHigh"/>
-          <include name="checkOutWithoutPostalCode"/>
-          <include name="filterVerify"/>
-          <include name="chooseCart"/>
-          <include name="checkOutVerify"/>
-          <include name="clickOnCheckOut"/>
-          <include name="checkOutInformation"/>
           <include name="tearDown"/>
-          <include name="scrollDownProduct"/>
-          <include name="checkOutWithoutLastName"/>
-          <include name="sortAscending"/>
-          <include name="sortHighToLow"/>
+          <include name="runTest"/>
         </methods>
-      </class> <!-- com.saucedemo.tests.ProductTest -->
+      </class> <!-- com.page.object.SauceDemoApplication -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

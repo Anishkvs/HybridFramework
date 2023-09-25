@@ -1,6 +1,6 @@
 package com.all.testcase;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,13 +11,12 @@ import com.saucedemo.SauceDemoLoginPage;
 import com.saucedemo.SauceDemoProductPage;
 
 public class SauceDemoApplication {
-
 	
 	public static void main(String[] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.gecko.driver","D:\\driver\\firefox\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		SauceDemoLoginPage loginPage = new SauceDemoLoginPage(driver);
 		loginPage.launchApplication();
 		loginPage.verifyLogin();

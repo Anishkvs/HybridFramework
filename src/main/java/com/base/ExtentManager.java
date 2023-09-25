@@ -31,7 +31,7 @@ public class ExtentManager {
 		extent.attachReporter(htmlReporter);
 		extent.setSystemInfo("QA", "Anish");
 		extent.setSystemInfo("Company", "Aspire");
-		extent.setSystemInfo("Build No", "v1.7");
+		extent.setSystemInfo("Build No", "v1.8");
 		
 		return extent;
 

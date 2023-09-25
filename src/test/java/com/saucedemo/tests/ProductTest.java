@@ -175,18 +175,14 @@ public class ProductTest extends TestBase {
 
 	}
 		
-		private void clear() {
+		private void clear() 
+	{
 				driver.findElement(By.id("first-name")).clear();
 			    driver.findElement(By.id("last-name")).clear();
 			    driver.findElement(By.id("postal-code")).clear();
 
-			}   
+	}   
     
-	
-	
-	
-	
-
-	
+		
 
 }
