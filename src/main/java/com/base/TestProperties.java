@@ -13,7 +13,7 @@ public class TestProperties {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\Config.properties");
 		config.load(fis);
 		
-		fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\OR.properties");
+		fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\Object_repository.properties");
 		OR.load(fis);
 		
 		System.out.println(config.getProperty("browser"));

@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-25T17:44:33 IST" name="Suite" finished-at="2023-09-25T17:45:09 IST" duration-ms="36522">
+  <suite started-at="2023-09-26T17:51:24 IST" name="Suite" finished-at="2023-09-26T17:52:02 IST" duration-ms="38429">
     <groups>
     </groups>
-    <test started-at="2023-09-25T17:44:33 IST" name="Test" finished-at="2023-09-25T17:45:09 IST" duration-ms="36522">
-      <class name="com.page.object.SauceDemoApplicationTwo">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.page.object.SauceDemoApplicationTwo@7586beff]" started-at="2023-09-25T17:44:33 IST" name="setUp" finished-at="2023-09-25T17:44:38 IST" duration-ms="5300" status="PASS">
+    <test started-at="2023-09-26T17:51:24 IST" name="Test" finished-at="2023-09-26T17:52:02 IST" duration-ms="38429">
+      <class name="com.page.object.SauceDemoApplication">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.page.object.SauceDemoApplication@7dcf94f8]" started-at="2023-09-26T17:51:24 IST" name="setUp" finished-at="2023-09-26T17:51:35 IST" duration-ms="11070" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="runTest()[pri:0, instance:com.page.object.SauceDemoApplicationTwo@7586beff]" started-at="2023-09-25T17:44:38 IST" name="runTest" finished-at="2023-09-25T17:45:09 IST" duration-ms="31182" status="PASS">
+        <test-method signature="runTest()[pri:0, instance:com.page.object.SauceDemoApplication@7dcf94f8]" started-at="2023-09-26T17:51:35 IST" name="runTest" finished-at="2023-09-26T17:52:02 IST" duration-ms="27318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.page.object.SauceDemoApplicationTwo@7586beff]" started-at="2023-09-25T17:45:09 IST" name="tearDown" finished-at="2023-09-25T17:45:11 IST" duration-ms="1690" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.page.object.SauceDemoApplication@7dcf94f8]" started-at="2023-09-26T17:52:03 IST" name="tearDown" finished-at="2023-09-26T17:52:04 IST" duration-ms="1700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.page.object.SauceDemoApplicationTwo -->
+      </class> <!-- com.page.object.SauceDemoApplication -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

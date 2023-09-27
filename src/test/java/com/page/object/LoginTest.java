@@ -118,7 +118,8 @@ public class LoginTest extends TestBase {
 	@Test
 	public void launchUrl() {
 		
-		driver.get("https://www.saucedemo.com/");
+		driver.get(config.getProperty("applicationurl"));
+
 
 	}
 

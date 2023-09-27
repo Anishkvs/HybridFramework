@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.base.TestBase;
 
 @Test
-public class SauceDemoApplicationTwo extends TestBase{
+public class SauceDemoApplicationRough extends TestBase{
 	
 	@Test
 	public void runTest() throws IOException, InterruptedException  {
@@ -28,15 +28,14 @@ public class SauceDemoApplicationTwo extends TestBase{
 		System.out.println(data.get(2));
 		
 		login.TC002_invalidCredentials(data.get(1).toString(), data.get(2).toString());	
-		ArrayList datatwo = obj.getData("LoginTwo");
-		login.TC004_validPasswordInvalidUsername(datatwo.get(1).toString(), datatwo.get(2).toString());
-		ArrayList datathree = obj.getData("LoginThree");
-		login.TC003_validUsernameInvalidPassword(datathree.get(1).toString(), datathree.get(2).toString());
-		ArrayList datafour = obj.getData("LoginFour");
-
+		
+		login.TC004_validPasswordInvalidUsername(data.get(3).toString(), data.get(4).toString());
+		
+		login.TC003_validUsernameInvalidPassword(data.get(5).toString(), data.get(6).toString());
+		
 		login.TC005_loginWithoutCredentials();
 		
-		login.TC001_loginValidCredentials(datafour.get(1).toString(), datafour.get(2).toString());
+		login.TC001_loginValidCredentials(data.get(7).toString(), data.get(8).toString());
 		//login.tearDown();
 		
 		ProductTest product = new ProductTest(driver);
@@ -51,16 +50,13 @@ public class SauceDemoApplicationTwo extends TestBase{
 		product.TC019_verifyCheckoutButton();
 		
 		CheckOutInfoTest check = new CheckOutInfoTest(driver);
-		ArrayList info = obj.getData("AddInfoOne");
+		ArrayList info = obj.getData("Add info");
 		
 		check.TC022_verifyContinueButtonWithoutFirstName();
 		
 		check.TC023_verifyContinueButtonWithoutLastName(info.get(1).toString(), info.get(2).toString());
-		ArrayList infotwo = obj.getData("AddInfoTwo");
-		check.TC024_verifyContinueButtonWithoutPostalCode(infotwo.get(1).toString(), infotwo.get(2).toString());
-		ArrayList infothree = obj.getData("AddInfoThree");
-
-		check.TC025_verifyContinueButtonWithAllDetails(infothree.get(1).toString(), infothree.get(2).toString(), infothree.get(3).toString());
+		check.TC024_verifyContinueButtonWithoutPostalCode(info.get(3).toString(), info.get(4).toString());
+		check.TC025_verifyContinueButtonWithAllDetails(info.get(5).toString(), info.get(6).toString(), info.get(3).toString());
 		
 		
 //		check.TC023_verifyContinueButtonWithoutLastName("FirstName", "689544");
