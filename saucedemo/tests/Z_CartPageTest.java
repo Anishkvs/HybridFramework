@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.base.TestBase;
+import com.testbase.TestBase;
 
 
 public class Z_CartPageTest extends TestBase {

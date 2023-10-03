@@ -2,7 +2,7 @@ package com.saucedemo.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import com.base.TestBase;
+import com.testbase.TestBase;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

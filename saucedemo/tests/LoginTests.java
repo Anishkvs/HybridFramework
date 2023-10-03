@@ -3,7 +3,7 @@ package com.saucedemo.tests;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.base.TestBase;
+import com.testbase.TestBase;
 
 public class LoginTests extends TestBase {
 

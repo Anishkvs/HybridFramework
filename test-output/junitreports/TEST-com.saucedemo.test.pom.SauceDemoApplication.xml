@@ -4,7 +4,7 @@
   <testcase classname="com.saucedemo.test.pom.SauceDemoApplicationOne" name="tearDown" time="0.010">
     <error message="Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">
       <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
-at com.base.TestBase2.tearDown(TestBase2.java:31)
+at com.testbase.TestBase2.tearDown(TestBase2.java:31)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import com.base.TestBase;
-import com.base.TestBase2;
+import com.testbase.TestBase;
+import com.testbase.TestBase2;
 
 public class SauceDemoCheckOutInfoPage extends TestBase2 {
 	WebDriver driver;

@@ -6,14 +6,17 @@
 	 <listener class-name ="com.listeners.CustomListeners" />
    </listeners>-->
 
-	<test thread-count="5" name="Test">
-		<parameter name="browserName" value="firefox" />
+	<test name="Parallel Tests Edge">
+		<parameter name="browserName" value="edge" />
 		<classes>
-
-			<!-- <class name="com.page.object.SauceDemoApplication"/>-->
-
-			<class name="com.page.object.LoginTest" />
-			<class name="com.page.object.ProductTest" />
+			 <class name="com.page.SauceDemoApplication"/>
 		</classes>
 	</test> <!-- Test -->
+	
+	<test name="Parallel Tests Firefox">
+		<parameter name="browserName" value="firefox" />
+		<classes>
+			 <class name="com.page.SauceDemoApplication"/>
+		</classes>
+	</test> 
 </suite> <!-- Suite -->

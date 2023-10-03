@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-import com.base.TestBase2;
+import com.testbase.TestBase2;
 
 import org.openqa.selenium.JavascriptExecutor;
 
