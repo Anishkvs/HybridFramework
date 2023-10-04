@@ -13,13 +13,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AutomationBase {
 
-	public static WebDriver driver = null;
+	public WebDriver driver = null;
 
 	/**
 	 * Method to start Browser session Chrome/Firefox/Edge
 	 * 
 	 * @author Anish
-	 * @since 03/10/2023
+	 * @since 03/October/2023
 	 * @param browserName
 	 * @return
 	 * @throws IOException
@@ -29,23 +29,33 @@ public class AutomationBase {
 		if (browserName.equalsIgnoreCase("chrome") || browserName.equalsIgnoreCase("Chrome_headless")) {
 
 			ChromeOptions options = new ChromeOptions();
+
 			if (browserName.equalsIgnoreCase("Chrome_headless")) {
 				options.addArguments("--headless");
 			}
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 
-		} else if (browserName.equalsIgnoreCase("firefox")) {
+		} else if (browserName.equalsIgnoreCase("firefox") || browserName.equalsIgnoreCase("Firefox_headless")) {
+
 			FirefoxOptions options = new FirefoxOptions();
-			options.addArguments("--headless"); // Add this line to run Firefox in headless mode
+
+			if (browserName.equalsIgnoreCase("Firefox_headless")) {
+				options.addArguments("--headless");
+			}
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver(options);
 
-		} else if (browserName.equalsIgnoreCase("edge")) {
+		} else if (browserName.equalsIgnoreCase("edge") || browserName.equalsIgnoreCase("Edge_headless")) {
+
 			EdgeOptions options = new EdgeOptions();
-			options.addArguments("--headless");
+
+			if (browserName.equalsIgnoreCase("Edge_headless")) {
+				options.addArguments("--headless");
+			}
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver(options);
+
 		} else {
 			System.out.println("Unsupport browser: " + browserName);
 		}

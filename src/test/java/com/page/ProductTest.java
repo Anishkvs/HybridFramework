@@ -8,9 +8,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-import com.saucedemo.base.AutomationBase;
+import com.saucedemo.keywords.Keywords;
+import com.testbase.TestBase;
 
-public class ProductTest extends AutomationBase {
+public class ProductTest extends TestBase {
 	
 	WebDriver driver;
 	
@@ -33,16 +34,7 @@ public class ProductTest extends AutomationBase {
 	WebElement addToCartFleeceJacket;
 	
 	@FindBy(xpath="//select[@class='product_sort_container']")
-	WebElement sortDescendingOrder;
-	
-	@FindBy(xpath="//select[@class='product_sort_container']")
-	WebElement sortLowToHigh;
-	
-	@FindBy(xpath="//select[@class='product_sort_container']")
-	WebElement sortHighToLow;
-	
-	@FindBy(xpath="//select[@class='product_sort_container']")
-	WebElement sortAscendingOrder;
+	WebElement sortProduct;
 	
 	@FindBy(id="remove-sauce-labs-bike-light")
 	WebElement deSelectAddToCart;
@@ -59,47 +51,56 @@ public class ProductTest extends AutomationBase {
 	@FindBy(id="add-to-cart-sauce-labs-onesie")
 	WebElement scrolldown;
 	
+	Keywords page = new Keywords();
+
 	
+	 @Test(priority = 1)
+		public void TC014_sortDescendingOrder() throws InterruptedException
+		{
+	    	sortProduct.click();
+	    	Thread.sleep(2000);
+	    	//page.selectOptionByVisibleText("Name (Z to A)");
+	    	//test = extent.createTest("TC014_Sort Descending Order");
+			driver.findElement(By.xpath("//select[@class='product_sort_container']")).click();	
+			Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
+			
+	    	list.selectByVisibleText("Name (Z to A)");
 
-    @Test(priority = 1)
-	public void TC014_sortDescendingOrder()
-	{
-    	sortDescendingOrder.click();
-    	//test = extent.createTest("TC014_Sort Descending Order");
-		//driver.findElement(By.xpath("//select[@class='product_sort_container']")).click();	
-		Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
+		}
+	    
+	    @Test(priority = 2)
+		public void TC015_sortLowToHigh()
+		{
+	    	sortProduct.click();
+			//page.selectOptionByVisibleText("Price (low to high)");
 
-    	list.selectByVisibleText("Name (Z to A)");
+	 		Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
+			list.selectByVisibleText("Price (low to high)");
 
-	}
-    
-    @Test(priority = 2)
-	public void TC015_sortLowToHigh()
-	{
-    	sortLowToHigh.click();
- 		Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
-		list.selectByVisibleText("Price (low to high)");
+		}
+	    
+	    @Test(priority = 3)
+		public void TC016_sortHighToLow()
+		{
+	    	sortProduct.click();
+			//page.selectOptionByVisibleText("Price (high to low)");
+	  		Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
+			list.selectByVisibleText("Price (high to low)");
 
-	}
-    
-    @Test(priority = 3)
-	public void TC016_sortHighToLow()
-	{
-    	sortHighToLow.click();
-  		Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
-		list.selectByVisibleText("Price (high to low)");
+		}
+	    
+	    @Test(priority = 4)
+		public void TC013_sortAscendingOrder()
+		{
+	    	sortProduct.click();
+			//page.selectOptionByVisibleText("Name (A to Z)");
+	    	Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
+			list.selectByVisibleText("Name (A to Z)");
+		}
+		
 
-	}
-    
-    @Test(priority = 4)
-	public void TC013_sortAscendingOrder()
-	{
-    	sortAscendingOrder.click();
-		Select list = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
-		list.selectByVisibleText("Name (A to Z)");
-	}
-	
-	@Test(priority = 5)
+
+   	@Test(priority = 5)
     public void TC008_addToCart() throws InterruptedException {
 		//test = extent.createTest("TC008_Choose the product");
 	    

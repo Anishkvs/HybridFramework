@@ -1,12 +1,21 @@
 package com.saucedemo.runner;
 
+import java.io.IOException;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
-
-import com.listeners.CustomListeners;
+import org.testng.annotations.Parameters;
+import com.listeners.AutomationReports;
 import com.saucedemo.base.AutomationBase;
 
-@Listeners(CustomListeners.class)
+@Listeners(AutomationReports.class)
 
 public class TestRunner extends AutomationBase {
+
+	@BeforeClass
+	@Parameters({ "browserName" })
+	public void setUp(String browserName) throws IOException {
+		startBrowserSession(browserName);
+
+	}
 
 }

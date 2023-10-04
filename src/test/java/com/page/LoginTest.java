@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import com.saucedemo.keywords.Keywords;
+
 
 import com.testbase.TestBase;
 
@@ -27,6 +29,8 @@ public class LoginTest extends TestBase {
 	@FindBy(xpath = "//input[@class='submit-button btn_action']")
 	WebElement loginButton;
 
+	Keywords page = new Keywords();
+	
 	@Test(priority = 5)
 	public void TC001_loginValidCredentials(String name, String pass) {
 
@@ -34,7 +38,8 @@ public class LoginTest extends TestBase {
 		password.sendKeys(pass);
 		loginButton.click();
 		System.out.println("Login application");
-		verifyHomePageTitle();
+		page.verifyHomePageTitle(driver);
+		//verifyHomePageTitle();
 
 	}
 

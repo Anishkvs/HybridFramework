@@ -6,19 +6,11 @@
     <classes>
       <class name="com.page.SauceDemoApplication">
         <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="SauceDemo"/>
         </methods>
       </class> <!-- com.page.SauceDemoApplication -->
     </classes>
   </test> <!-- Parallel Tests Edge(failed) -->
-  <test thread-count="5" name="Parallel Tests Firefox(failed)">
-    <parameter name="browserName" value="firefox"/>
-    <classes>
-      <class name="com.page.SauceDemoApplication">
-        <methods>
-          <include name="SauceDemo"/>
-        </methods>
-      </class> <!-- com.page.SauceDemoApplication -->
-    </classes>
-  </test> <!-- Parallel Tests Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

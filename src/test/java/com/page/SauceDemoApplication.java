@@ -3,9 +3,9 @@ package com.page;
 import java.io.IOException;
 import java.util.ArrayList;
 import org.testng.annotations.Test;
-import com.saucedemo.base.AutomationBase;
+import com.testbase.TestBase;
 
-public class SauceDemoApplication extends AutomationBase {
+public class SauceDemoApplication extends TestBase {
 
 	@Test
 	public void SauceDemo() throws IOException, InterruptedException {

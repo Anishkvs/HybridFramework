@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.page.LaunchBrowser">
+      <class name="com.saucedemo.runner.TestRunner">
         <methods>
-          <include name="loginApplication"/>
+          <include name="testName"/>
           <include name="startBrowserSession"/>
         </methods>
-      </class> <!-- com.page.LaunchBrowser -->
+      </class> <!-- com.saucedemo.runner.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
