@@ -6,12 +6,10 @@
     <classes>
       <class name="com.saucedemo.tests.ProductTest">
         <methods>
-          <include name="setUp"/>
+          <include name="TC030_verifyThankYouMessageInOverviewPage"/>
           <include name="TC024_verifyContinueButtonWithoutPostalCode"/>
-          <include name="TC026_verifyFinishButtonInCheckoutPage"/>
-          <include name="TC025_verifyContinueButtonWithAllDetails"/>
+          <include name="setUp"/>
           <include name="TC023_verifyContinueButtonWithoutLastName"/>
-          <include name="TC022_verifyContinueButtonWithoutFirstName"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

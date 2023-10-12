@@ -11,15 +11,17 @@ public class CheckOutInfoPage {
 
 	Keywords locator = new Keywords();
 
-	public void verifyCart(WebDriver driver, String firstname, String lastname, String Postal) throws IOException {
+	public void verifyCart(WebDriver driver, String firstname, String lastname, String Postal) throws IOException, InterruptedException {
 
-		locator.select(driver, "firstname_ID", firstname);
-		locator.select(driver, "lastname_ID", lastname);
-		locator.select(driver, "postalcode_ID", Postal);
+//		locator.select(driver, "firstname_ID", firstname);
+//		locator.select(driver, "lastname_ID", lastname);
+//		locator.select(driver, "postalcode_ID", Postal);
 
-		//driver.findElement(By.id("first-name")).sendKeys(firstname);
-		//driver.findElement(By.id("last-name")).sendKeys(lastname);
-		//driver.findElement(By.id("postal-code")).sendKeys(Postal);
+		clearInfo(driver);
+		driver.findElement(By.id("first-name")).sendKeys(firstname);
+		driver.findElement(By.id("last-name")).sendKeys(lastname);
+		driver.findElement(By.id("postal-code")).sendKeys(Postal);
+		
 	}
 
 	public void cancelButtonInCheckoutPage(WebDriver driver) throws IOException {
@@ -28,10 +30,11 @@ public class CheckOutInfoPage {
 		//driver.findElement(By.id("cancel")).click();
 	}
 
-	public void countinueButtonInCheckoutPage(WebDriver driver) throws IOException {
+	public void countinueButtonInCheckoutPage(WebDriver driver) throws IOException, InterruptedException {
 		
-		locator.click(driver, "continue_ID");
-		//driver.findElement(By.id("continue")).click();
+		//locator.click(driver, "continue_ID");
+		driver.findElement(By.id("continue")).click();
+		Thread.sleep(1000);
 	}
 
 	public void countinueButtonIsDisplayed(WebDriver driver) {

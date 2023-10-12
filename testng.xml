@@ -6,8 +6,10 @@
 	<test name="Parallel Tests Edge">
 		<parameter name="browserName" value="firefox" />
 		<classes>
-		    <class name="com.saucedemo.tests.LoginTest" />
-		    <class name="com.saucedemo.tests.ProductTest" />
+			<class name="com.saucedemo.tests.LoginTest" />
+			<class name="com.saucedemo.tests.ProductTest" />
+
+		
 		</classes>
 	</test> <!-- Test -->
 

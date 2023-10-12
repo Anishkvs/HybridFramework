@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Parallel Tests Edge</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>23/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 12 11:01:57 IST 2023</td>
+<td>Started on:</td><td>Thu Oct 12 15:05:50 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>62 seconds (62423 ms)</td>
+<tr><td>Total time:</td><td>39 seconds (39468 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,105 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC023_verifyContinueButtonWithoutLastName()'><b>TC023_verifyContinueButtonWithoutLastName</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td><div><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [TC023_verifyContinueButtonWithoutLastName] with [interface org.openqa.selenium.WebDriver].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+<td title='com.saucedemo.tests.ProductTest.TC024_verifyContinueButtonWithoutPostalCode()'><b>TC024_verifyContinueButtonWithoutPostalCode</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:23)
+	at com.saucedemo.tests.ProductTest.TC024_verifyContinueButtonWithoutPostalCode(ProductTest.java:178)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1529457505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1529457505'><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [TC023_verifyContinueButtonWithoutLastName] with [interface org.openqa.selenium.WebDriver].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC022_verifyContinueButtonWithoutFirstName()'><b>TC022_verifyContinueButtonWithoutFirstName</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td><div><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [TC022_verifyContinueButtonWithoutFirstName] with [interface org.openqa.selenium.WebDriver].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace971324399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace971324399'><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [TC022_verifyContinueButtonWithoutFirstName] with [interface org.openqa.selenium.WebDriver].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC025_verifyContinueButtonWithAllDetails()'><b>TC025_verifyContinueButtonWithAllDetails</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td><div><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;input&quot;
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
-	at com.saucedemo.keywords.Keywords.select(Keywords.java:406)
-	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:16)
-	at com.saucedemo.tests.ProductTest.TC025_verifyContinueButtonWithAllDetails(ProductTest.java:195)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace115297013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace115297013'><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;input&quot;
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
-	at com.saucedemo.keywords.Keywords.select(Keywords.java:406)
-	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:16)
-	at com.saucedemo.tests.ProductTest.TC025_verifyContinueButtonWithAllDetails(ProductTest.java:195)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1938377818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1938377818'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:23)
+	at com.saucedemo.tests.ProductTest.TC024_verifyContinueButtonWithoutPostalCode(ProductTest.java:178)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -203,27 +115,24 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC024_verifyContinueButtonWithoutPostalCode()'><b>TC024_verifyContinueButtonWithoutPostalCode</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td><div><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;input&quot;
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
-	at com.saucedemo.keywords.Keywords.select(Keywords.java:406)
-	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:16)
-	at com.saucedemo.tests.ProductTest.TC024_verifyContinueButtonWithoutPostalCode(ProductTest.java:185)
+<td title='com.saucedemo.tests.ProductTest.TC030_verifyThankYouMessageInOverviewPage()'><b>TC030_verifyThankYouMessageInOverviewPage</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Thank you for your order!] but found [[[FirefoxDriver: firefox on windows (cdc02391-e596-4e8b-b280-37ac50f5f86f)] -&gt; xpath: //h2[contains(text(),&apos;Thank you for your order!&apos;)]]]
+	at com.saucedemo.keywords.Keywords.assertEquals(Keywords.java:230)
+	at com.saucedemo.pages.CompletePage.verifyThankYouMessage(CompletePage.java:17)
+	at com.saucedemo.tests.ProductTest.TC030_verifyThankYouMessageInOverviewPage(ProductTest.java:220)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1250315597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1250315597'><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;input&quot;
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
-	at com.saucedemo.keywords.Keywords.select(Keywords.java:406)
-	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:16)
-	at com.saucedemo.tests.ProductTest.TC024_verifyContinueButtonWithoutPostalCode(ProductTest.java:185)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1086350168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1086350168'><pre>java.lang.AssertionError: expected [Thank you for your order!] but found [[[FirefoxDriver: firefox on windows (cdc02391-e596-4e8b-b280-37ac50f5f86f)] -&gt; xpath: //h2[contains(text(),&apos;Thank you for your order!&apos;)]]]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:644)
+	at com.saucedemo.keywords.Keywords.assertEquals(Keywords.java:230)
+	at com.saucedemo.pages.CompletePage.verifyThankYouMessage(CompletePage.java:17)
+	at com.saucedemo.tests.ProductTest.TC030_verifyThankYouMessageInOverviewPage(ProductTest.java:220)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -252,58 +161,19 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC026_verifyFinishButtonInCheckoutPage()'><b>TC026_verifyFinishButtonInCheckoutPage</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[@id=&apos;finish&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [206e0de6-2dd2-43b0-aeea-c955f0c7ce7d, findElement {using=xpath, value=//button[@id=&apos;finish&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:debuggerAddress: 127.0.0.1:35472, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21684, moz:profile: C:\Users\Anish\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:35472/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 206e0de6-2dd2-43b0-aeea-c955f0c7ce7d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at com.saucedemo.keywords.Keywords.click(Keywords.java:347)
-	at com.saucedemo.pages.CheckOutOverviewPage.finishButtonInCheckoutPage(CheckOutOverviewPage.java:19)
-	at com.saucedemo.tests.ProductTest.TC026_verifyFinishButtonInCheckoutPage(ProductTest.java:215)
+<td title='com.saucedemo.tests.ProductTest.TC023_verifyContinueButtonWithoutLastName()'><b>TC023_verifyContinueButtonWithoutLastName</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:22)
+	at com.saucedemo.tests.ProductTest.TC023_verifyContinueButtonWithoutLastName(ProductTest.java:167)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace366023886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace366023886'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[@id=&apos;finish&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [206e0de6-2dd2-43b0-aeea-c955f0c7ce7d, findElement {using=xpath, value=//button[@id=&apos;finish&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:debuggerAddress: 127.0.0.1:35472, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21684, moz:profile: C:\Users\Anish\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:35472/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 206e0de6-2dd2-43b0-aeea-c955f0c7ce7d
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at com.saucedemo.keywords.Keywords.click(Keywords.java:347)
-	at com.saucedemo.pages.CheckOutOverviewPage.finishButtonInCheckoutPage(CheckOutOverviewPage.java:19)
-	at com.saucedemo.tests.ProductTest.TC026_verifyFinishButtonInCheckoutPage(ProductTest.java:215)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace497104907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace497104907'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:22)
+	at com.saucedemo.tests.ProductTest.TC023_verifyContinueButtonWithoutLastName(ProductTest.java:167)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -331,8 +201,8 @@ Session ID: 206e0de6-2dd2-43b0-aeea-c955f0c7ce7d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>10</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>2</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -343,120 +213,95 @@ Session ID: 206e0de6-2dd2-43b0-aeea-c955f0c7ce7d
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC019_verifyCheckoutButton()'><b>TC019_verifyCheckoutButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC010_cartCountIncrease()'><b>TC010_cartCountIncrease</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC027_verifyCancelButtonInCheckoutPage()'><b>TC027_verifyCancelButtonInCheckoutPage</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC007_navigateBrowserBack()'><b>TC007_navigateBrowserBack</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>2</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
-<tr>
-<td title='com.saucedemo.tests.LoginTest.TC002_invalidCredentials()'><b>TC002_invalidCredentials</b><br>Test class: com.saucedemo.tests.LoginTest</td>
-<td></td>
-<td>1</td>
-<td>com.saucedemo.tests.LoginTest@279fedbd</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC013_sortAscendingOrder()'><b>TC013_sortAscendingOrder</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
-<tr>
 <td title='com.saucedemo.tests.ProductTest.TC014_sortDescendingOrder()'><b>TC014_sortDescendingOrder</b><br>Test class: com.saucedemo.tests.ProductTest</td>
 <td></td>
 <td>2</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 <tr>
-<td title='com.saucedemo.tests.LoginTest.TC001_loginValidCredentials()'><b>TC001_loginValidCredentials</b><br>Test class: com.saucedemo.tests.LoginTest</td>
+<td title='com.saucedemo.tests.ProductTest.TC025_verifyContinueButtonWithAllDetails()'><b>TC025_verifyContinueButtonWithAllDetails</b><br>Test class: com.saucedemo.tests.ProductTest</td>
 <td></td>
-<td>0</td>
-<td>com.saucedemo.tests.LoginTest@279fedbd</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC006_navigateBrowserForward()'><b>TC006_navigateBrowserForward</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>2</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC021_verifyCancelButton()'><b>TC021_verifyCancelButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC017_verifyShoppingCartButton()'><b>TC017_verifyShoppingCartButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>5</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 <tr>
 <td title='com.saucedemo.tests.ProductTest.TC018_verifyRemoveButton()'><b>TC018_verifyRemoveButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
 <td></td>
 <td>2</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC008_addToCart()'><b>TC008_addToCart</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 <tr>
 <td title='com.saucedemo.tests.ProductTest.TC012_deSelectAddToCart()'><b>TC012_deSelectAddToCart</b><br>Test class: com.saucedemo.tests.ProductTest</td>
 <td></td>
 <td>1</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC016_sortHighToLow()'><b>TC016_sortHighToLow</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td title='com.saucedemo.tests.ProductTest.TC022_verifyContinueButtonWithoutFirstName()'><b>TC022_verifyContinueButtonWithoutFirstName</b><br>Test class: com.saucedemo.tests.ProductTest</td>
 <td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>3</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC009_addToAllCart()'><b>TC009_addToAllCart</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td title='com.saucedemo.tests.ProductTest.TC007_navigateBrowserBack()'><b>TC007_navigateBrowserBack</b><br>Test class: com.saucedemo.tests.ProductTest</td>
 <td></td>
 <td>2</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC026_verifyCountinueButtonInCheckoutPage()'><b>TC026_verifyCountinueButtonInCheckoutPage</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td title='com.saucedemo.tests.ProductTest.TC019_verifyCheckoutButton()'><b>TC019_verifyCheckoutButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC015_sortLowToHigh()'><b>TC015_sortLowToHigh</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td title='com.saucedemo.tests.ProductTest.TC013_sortAscendingOrder()'><b>TC013_sortAscendingOrder</b><br>Test class: com.saucedemo.tests.ProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
-<tr>
-<td title='com.saucedemo.tests.LoginTest.TC004_validPasswordInvalidUsername()'><b>TC004_validPasswordInvalidUsername</b><br>Test class: com.saucedemo.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.LoginTest@279fedbd</td></tr>
-<tr>
-<td title='com.saucedemo.tests.LoginTest.TC003_validUsernameInvalidPassword()'><b>TC003_validUsernameInvalidPassword</b><br>Test class: com.saucedemo.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.LoginTest@279fedbd</td></tr>
-<tr>
-<td title='com.saucedemo.tests.LoginTest.TC005_loginWithoutCredentials()'><b>TC005_loginWithoutCredentials</b><br>Test class: com.saucedemo.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.LoginTest@279fedbd</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC011_cartCountDecrease()'><b>TC011_cartCountDecrease</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 <tr>
 <td title='com.saucedemo.tests.ProductTest.TC020_verifyContinueShoppingButton()'><b>TC020_verifyContinueShoppingButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.saucedemo.tests.ProductTest@fa4c865</td></tr>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC026_verifyFinishButtonInCheckoutPage()'><b>TC026_verifyFinishButtonInCheckoutPage</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC017_verifyShoppingCartButton()'><b>TC017_verifyShoppingCartButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC016_sortHighToLow()'><b>TC016_sortHighToLow</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC027_verifyCancelButtonInCheckoutPage()'><b>TC027_verifyCancelButtonInCheckoutPage</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC008_addToCart()'><b>TC008_addToCart</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC021_verifyCancelButton()'><b>TC021_verifyCancelButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC015_sortLowToHigh()'><b>TC015_sortLowToHigh</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC009_addToAllCart()'><b>TC009_addToAllCart</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td></td>
+<td>3</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC006_navigateBrowserForward()'><b>TC006_navigateBrowserForward</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td></td>
+<td>2</td>
+<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
 </table><p>
 </body>
 </html>

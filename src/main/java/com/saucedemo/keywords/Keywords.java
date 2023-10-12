@@ -224,10 +224,10 @@ public class Keywords {
 	 * @param actual
 	 * @param unExpected
 	 */
-	public void assertEquals(String actual, String unExpected) {
+	public void assertEquals(WebElement actual, String Expected) {
 
 		try {
-			Assert.assertEquals(actual, unExpected);
+			Assert.assertEquals(actual, Expected);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

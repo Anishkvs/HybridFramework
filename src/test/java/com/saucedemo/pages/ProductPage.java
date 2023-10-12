@@ -1,7 +1,9 @@
 package com.saucedemo.pages;
 
 import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
+
 import com.saucedemo.keywords.Keywords;
 
 public class ProductPage {	
@@ -11,7 +13,7 @@ public class ProductPage {
 	public void addToCartBackPack(WebDriver driver) throws IOException {
 
 		locator.click(driver, "addToCartBackPack_ID");
-
+		
 	}
 	public void addToCartBikeLight(WebDriver driver) throws IOException {
 
@@ -31,7 +33,7 @@ public class ProductPage {
 	public void sortProduct(WebDriver driver) throws IOException {
 
 		locator.click(driver, "sortProduct_XPATH");
-
+		
 	}
 	public void deSelectAddToCart(WebDriver driver) throws IOException {
 
