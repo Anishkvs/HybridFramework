@@ -9,12 +9,13 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.annotations.AfterClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AutomationBase {
+public class AutomationBase { 	
 
-	public WebDriver driver = null;
-
+	public WebDriver driver;
+		
 	/**
 	 * Method to start Browser session Chrome/Firefox/Edge
 	 * 
@@ -25,7 +26,8 @@ public class AutomationBase {
 	 * @throws IOException
 	 */
 	public WebDriver startBrowserSession(String browserName) throws IOException {
-
+	
+		
 		if (browserName.equalsIgnoreCase("chrome") || browserName.equalsIgnoreCase("Chrome_headless")) {
 
 			ChromeOptions options = new ChromeOptions();
@@ -59,12 +61,20 @@ public class AutomationBase {
 		} else {
 			System.out.println("Unsupport browser: " + browserName);
 		}
+		
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
 		return driver;
 
 	}
+	
+	@AfterClass
+	public void tearDown() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.quit();
+	}
+	
+
 
 }

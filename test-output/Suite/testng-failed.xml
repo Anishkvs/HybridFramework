@@ -2,15 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Parallel Tests Edge(failed)">
-    <parameter name="browserName" value="edge"/>
+    <parameter name="browserName" value="firefox"/>
     <classes>
-      <class name="com.page.SauceDemoApplication">
+      <class name="com.saucedemo.tests.ProductTest">
         <methods>
           <include name="setUp"/>
+          <include name="TC024_verifyContinueButtonWithoutPostalCode"/>
+          <include name="TC026_verifyFinishButtonInCheckoutPage"/>
+          <include name="TC025_verifyContinueButtonWithAllDetails"/>
+          <include name="TC023_verifyContinueButtonWithoutLastName"/>
+          <include name="TC022_verifyContinueButtonWithoutFirstName"/>
           <include name="tearDown"/>
-          <include name="SauceDemo"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.page.SauceDemoApplication -->
+      </class> <!-- com.saucedemo.tests.ProductTest -->
     </classes>
   </test> <!-- Parallel Tests Edge(failed) -->
 </suite> <!-- Failed suite [Suite] -->
