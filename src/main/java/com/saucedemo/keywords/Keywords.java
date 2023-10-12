@@ -221,13 +221,13 @@ public class Keywords {
 	 * @since 04/October/2023
 	 * @Modified 09/October/2023
 	 * @param driver
-	 * @param actual
+	 * @param string
 	 * @param unExpected
 	 */
-	public void assertEquals(WebElement actual, String Expected) {
+	public void assertEquals(String string, String Expected) {
 
 		try {
-			Assert.assertEquals(actual, Expected);
+			Assert.assertEquals(string, Expected);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

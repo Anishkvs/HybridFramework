@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="21" passed="18" failed="3" skipped="0">
+<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-12T15:05:50 IST" name="Suite" finished-at="2023-10-12T15:06:29 IST" duration-ms="39468">
+  <suite started-at="2023-10-12T18:58:45 IST" name="Suite" finished-at="2023-10-12T18:59:53 IST" duration-ms="68515">
     <groups>
     </groups>
-    <test started-at="2023-10-12T15:05:50 IST" name="Parallel Tests Edge" finished-at="2023-10-12T15:06:29 IST" duration-ms="39468">
+    <test started-at="2023-10-12T18:58:45 IST" name="Parallel Tests Edge" finished-at="2023-10-12T18:59:53 IST" duration-ms="68515">
       <class name="com.saucedemo.tests.ProductTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:05:50 IST" name="setUp" finished-at="2023-10-12T15:05:55 IST" duration-ms="4939" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:05 IST" name="setUp" finished-at="2023-10-12T18:59:09 IST" duration-ms="4105" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,218 +18,140 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:05:55 IST" name="setUp" finished-at="2023-10-12T15:05:58 IST" duration-ms="2911" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:09 IST" name="setUp" finished-at="2023-10-12T18:59:11 IST" duration-ms="2262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC014_sortDescendingOrder()[pri:1, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:05:58 IST" name="TC014_sortDescendingOrder" finished-at="2023-10-12T15:06:00 IST" duration-ms="2561" status="PASS">
+        <test-method signature="TC014_sortDescendingOrder()[pri:1, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:11 IST" name="TC014_sortDescendingOrder" description="Sort the product in descending order." finished-at="2023-10-12T18:59:14 IST" duration-ms="2537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC014_sortDescendingOrder -->
-        <test-method signature="TC015_sortLowToHigh()[pri:2, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:00 IST" name="TC015_sortLowToHigh" finished-at="2023-10-12T15:06:01 IST" duration-ms="517" status="PASS">
+        <test-method signature="TC015_sortLowToHigh()[pri:2, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:14 IST" name="TC015_sortLowToHigh" description="Sort the product price from low to high." finished-at="2023-10-12T18:59:14 IST" duration-ms="506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC015_sortLowToHigh -->
-        <test-method signature="TC016_sortHighToLow()[pri:3, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:01 IST" name="TC016_sortHighToLow" finished-at="2023-10-12T15:06:02 IST" duration-ms="554" status="PASS">
+        <test-method signature="TC016_sortHighToLow()[pri:3, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:14 IST" name="TC016_sortHighToLow" description="Sort the product price from high to low." finished-at="2023-10-12T18:59:15 IST" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC016_sortHighToLow -->
-        <test-method signature="TC013_sortAscendingOrder()[pri:4, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:02 IST" name="TC013_sortAscendingOrder" finished-at="2023-10-12T15:06:02 IST" duration-ms="527" status="PASS">
+        <test-method signature="TC013_sortAscendingOrder()[pri:4, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:15 IST" name="TC013_sortAscendingOrder" description="Sort the product in ascending order." finished-at="2023-10-12T18:59:15 IST" duration-ms="502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC013_sortAscendingOrder -->
-        <test-method signature="TC008_addToCart()[pri:5, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:02 IST" name="TC008_addToCart" finished-at="2023-10-12T15:06:02 IST" duration-ms="250" status="PASS">
+        <test-method signature="TC008_addToCart()[pri:5, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:15 IST" name="TC008_addToCart" description="Add a product to the cart." finished-at="2023-10-12T18:59:16 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC008_addToCart -->
-        <test-method signature="TC009_addToAllCart()[pri:6, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:02 IST" name="TC009_addToAllCart" finished-at="2023-10-12T15:06:05 IST" duration-ms="3010" status="PASS">
+        <test-method signature="TC009_addToAllCart()[pri:6, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:16 IST" name="TC009_addToAllCart" description="Add all the products to the cart." finished-at="2023-10-12T18:59:19 IST" duration-ms="2935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC009_addToAllCart -->
-        <test-method signature="TC012_deSelectAddToCart()[pri:7, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:05 IST" name="TC012_deSelectAddToCart" finished-at="2023-10-12T15:06:07 IST" duration-ms="1245" status="PASS">
+        <test-method signature="TC012_deSelectAddToCart()[pri:7, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:19 IST" name="TC012_deSelectAddToCart" description="De-select a product from the cart." finished-at="2023-10-12T18:59:20 IST" duration-ms="1241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC012_deSelectAddToCart -->
-        <test-method signature="TC017_verifyShoppingCartButton()[pri:8, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:07 IST" name="TC017_verifyShoppingCartButton" finished-at="2023-10-12T15:06:07 IST" duration-ms="249" status="PASS">
+        <test-method signature="TC017_verifyShoppingCartButton()[pri:8, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:20 IST" name="TC017_verifyShoppingCartButton" description="Click on the shopping cart button in the product page." finished-at="2023-10-12T18:59:20 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC017_verifyShoppingCartButton -->
-        <test-method signature="TC018_verifyRemoveButton()[pri:9, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:07 IST" name="TC018_verifyRemoveButton" finished-at="2023-10-12T15:06:09 IST" duration-ms="2291" status="PASS">
+        <test-method signature="TC018_verifyRemoveButton()[pri:9, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:20 IST" name="TC018_verifyRemoveButton" description="Verify the remove button from the product page." finished-at="2023-10-12T18:59:22 IST" duration-ms="2233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC018_verifyRemoveButton -->
-        <test-method signature="TC019_verifyCheckoutButton()[pri:10, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:09 IST" name="TC019_verifyCheckoutButton" finished-at="2023-10-12T15:06:09 IST" duration-ms="272" status="PASS">
+        <test-method signature="TC019_verifyCheckoutButton()[pri:10, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:22 IST" name="TC019_verifyCheckoutButton" description="Verify the checkout button from the cart page." finished-at="2023-10-12T18:59:23 IST" duration-ms="237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC019_verifyCheckoutButton -->
-        <test-method signature="TC020_verifyContinueShoppingButton()[pri:11, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:09 IST" name="TC020_verifyContinueShoppingButton" finished-at="2023-10-12T15:06:09 IST" duration-ms="91" status="PASS">
+        <test-method signature="TC020_verifyContinueShoppingButton()[pri:11, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:23 IST" name="TC020_verifyContinueShoppingButton" description="Verify the continue shopping button in the information page." finished-at="2023-10-12T18:59:23 IST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC020_verifyContinueShoppingButton -->
-        <test-method signature="TC021_verifyCancelButton()[pri:12, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:09 IST" name="TC021_verifyCancelButton" finished-at="2023-10-12T15:06:10 IST" duration-ms="29" status="PASS">
+        <test-method signature="TC021_verifyCancelButton()[pri:12, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:23 IST" name="TC021_verifyCancelButton" description="Verify the cancel button in the information page." finished-at="2023-10-12T18:59:23 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC021_verifyCancelButton -->
-        <test-method signature="TC022_verifyContinueButtonWithoutFirstName()[pri:13, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:10 IST" name="TC022_verifyContinueButtonWithoutFirstName" finished-at="2023-10-12T15:06:13 IST" duration-ms="3346" status="PASS">
+        <test-method signature="TC022_verifyContinueButtonWithoutFirstName()[pri:13, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:23 IST" name="TC022_verifyContinueButtonWithoutFirstName" description="Verify clicking on the continue button without user information." finished-at="2023-10-12T18:59:26 IST" duration-ms="3281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC022_verifyContinueButtonWithoutFirstName -->
-        <test-method signature="TC023_verifyContinueButtonWithoutLastName()[pri:14, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:13 IST" name="TC023_verifyContinueButtonWithoutLastName" finished-at="2023-10-12T15:06:15 IST" duration-ms="2269" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:22)
-at com.saucedemo.tests.ProductTest.TC023_verifyContinueButtonWithoutLastName(ProductTest.java:167)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+        <test-method signature="TC023_verifyContinueButtonWithoutLastName()[pri:14, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:26 IST" name="TC023_verifyContinueButtonWithoutLastName" description="Verify clicking on the continue button without a last name." finished-at="2023-10-12T18:59:31 IST" duration-ms="5497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC023_verifyContinueButtonWithoutLastName -->
-        <test-method signature="TC024_verifyContinueButtonWithoutPostalCode()[pri:15, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:15 IST" name="TC024_verifyContinueButtonWithoutPostalCode" finished-at="2023-10-12T15:06:17 IST" duration-ms="2255" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:23)
-at com.saucedemo.tests.ProductTest.TC024_verifyContinueButtonWithoutPostalCode(ProductTest.java:178)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+        <test-method signature="TC024_verifyContinueButtonWithoutPostalCode()[pri:15, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:31 IST" name="TC024_verifyContinueButtonWithoutPostalCode" description="Verify clicking on the continue button without a postal code." finished-at="2023-10-12T18:59:37 IST" duration-ms="5492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC024_verifyContinueButtonWithoutPostalCode -->
-        <test-method signature="TC025_verifyContinueButtonWithAllDetails()[pri:16, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:17 IST" name="TC025_verifyContinueButtonWithAllDetails" finished-at="2023-10-12T15:06:23 IST" duration-ms="5568" status="PASS">
+        <test-method signature="TC025_verifyContinueButtonWithAllDetails()[pri:16, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:37 IST" name="TC025_verifyContinueButtonWithAllDetails" description="Verify clicking on the continue button with all details." finished-at="2023-10-12T18:59:42 IST" duration-ms="5492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC025_verifyContinueButtonWithAllDetails -->
-        <test-method signature="TC027_verifyCancelButtonInCheckoutPage()[pri:17, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:23 IST" name="TC027_verifyCancelButtonInCheckoutPage" finished-at="2023-10-12T15:06:23 IST" duration-ms="20" status="PASS">
+        <test-method signature="TC027_verifyCancelButtonInCheckoutPage()[pri:17, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:42 IST" name="TC027_verifyCancelButtonInCheckoutPage" description="Verify the cancel button in the checkout page." finished-at="2023-10-12T18:59:42 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC027_verifyCancelButtonInCheckoutPage -->
-        <test-method signature="TC026_verifyFinishButtonInCheckoutPage()[pri:18, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:23 IST" name="TC026_verifyFinishButtonInCheckoutPage" finished-at="2023-10-12T15:06:23 IST" duration-ms="250" status="PASS">
+        <test-method signature="TC026_verifyFinishButtonInCheckoutPage()[pri:18, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:42 IST" name="TC026_verifyFinishButtonInCheckoutPage" description="Verify clicking on the finish button in the checkout page last name." finished-at="2023-10-12T18:59:43 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC026_verifyFinishButtonInCheckoutPage -->
-        <test-method signature="TC007_navigateBrowserBack()[pri:19, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:23 IST" name="TC007_navigateBrowserBack" finished-at="2023-10-12T15:06:25 IST" duration-ms="2037" status="PASS">
+        <test-method signature="TC007_navigateBrowserBack()[pri:19, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:43 IST" name="TC007_navigateBrowserBack" description="Verify browser back possibilities." finished-at="2023-10-12T18:59:45 IST" duration-ms="2022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC007_navigateBrowserBack -->
-        <test-method signature="TC006_navigateBrowserForward()[pri:20, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:25 IST" name="TC006_navigateBrowserForward" finished-at="2023-10-12T15:06:27 IST" duration-ms="2022" status="PASS">
+        <test-method signature="TC006_navigateBrowserForward()[pri:20, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:45 IST" name="TC006_navigateBrowserForward" description="Verify browser forward possibilities." finished-at="2023-10-12T18:59:47 IST" duration-ms="2029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC006_navigateBrowserForward -->
-        <test-method signature="TC030_verifyThankYouMessageInOverviewPage()[pri:21, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:27 IST" name="TC030_verifyThankYouMessageInOverviewPage" finished-at="2023-10-12T15:06:27 IST" duration-ms="18" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Thank you for your order!] but found [[[FirefoxDriver: firefox on windows (cdc02391-e596-4e8b-b280-37ac50f5f86f)] -> xpath: //h2[contains(text(),'Thank you for your order!')]]]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Thank you for your order!] but found [[[FirefoxDriver: firefox on windows (cdc02391-e596-4e8b-b280-37ac50f5f86f)] -> xpath: //h2[contains(text(),'Thank you for your order!')]]]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:644)
-at com.saucedemo.keywords.Keywords.assertEquals(Keywords.java:230)
-at com.saucedemo.pages.CompletePage.verifyThankYouMessage(CompletePage.java:17)
-at com.saucedemo.tests.ProductTest.TC030_verifyThankYouMessageInOverviewPage(ProductTest.java:220)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="TC030_verifyThankYouMessageInOverviewPage()[pri:21, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:47 IST" name="TC030_verifyThankYouMessageInOverviewPage" description="Verify the &#039;Thank you&#039; message in the overview page." finished-at="2023-10-12T18:59:47 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC030_verifyThankYouMessageInOverviewPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.tests.ProductTest@752325ad]" started-at="2023-10-12T15:06:27 IST" name="tearDown" finished-at="2023-10-12T15:06:29 IST" duration-ms="2020" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.tests.ProductTest@1ff4931d]" started-at="2023-10-12T18:59:47 IST" name="tearDown" finished-at="2023-10-12T18:59:53 IST" duration-ms="6268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.saucedemo.tests.ProductTest -->
+      <class name="com.saucedemo.tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.saucedemo.tests.LoginTest@55fe41ea]" started-at="2023-10-12T18:58:45 IST" name="setUp" finished-at="2023-10-12T18:58:51 IST" duration-ms="5974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.tests.LoginTest@55fe41ea]" started-at="2023-10-12T18:58:51 IST" name="setUp" finished-at="2023-10-12T18:58:51 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC002_invalidCredentials()[pri:1, instance:com.saucedemo.tests.LoginTest@55fe41ea]" started-at="2023-10-12T18:58:51 IST" name="TC002_invalidCredentials" description="Verify login functionality with invalid credentials." finished-at="2023-10-12T18:58:54 IST" duration-ms="2949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_invalidCredentials -->
+        <test-method signature="TC004_validPasswordInvalidUsername()[pri:2, instance:com.saucedemo.tests.LoginTest@55fe41ea]" started-at="2023-10-12T18:58:54 IST" name="TC004_validPasswordInvalidUsername" description="Verify login functionality with a valid password and an invalid username." finished-at="2023-10-12T18:58:56 IST" duration-ms="1959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_validPasswordInvalidUsername -->
+        <test-method signature="TC003_validUsernameInvalidPassword()[pri:3, instance:com.saucedemo.tests.LoginTest@55fe41ea]" started-at="2023-10-12T18:58:56 IST" name="TC003_validUsernameInvalidPassword" description="Verify login functionality with a valid username and an invalid password." finished-at="2023-10-12T18:58:58 IST" duration-ms="1924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_validUsernameInvalidPassword -->
+        <test-method signature="TC005_loginWithoutCredentials()[pri:4, instance:com.saucedemo.tests.LoginTest@55fe41ea]" started-at="2023-10-12T18:58:58 IST" name="TC005_loginWithoutCredentials" description="Verify login functionality without credentials." finished-at="2023-10-12T18:58:59 IST" duration-ms="1813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005_loginWithoutCredentials -->
+        <test-method signature="TC001_loginValidCredentials()[pri:5, instance:com.saucedemo.tests.LoginTest@55fe41ea]" started-at="2023-10-12T18:58:59 IST" name="TC001_loginValidCredentials" description="Verify login functionality." finished-at="2023-10-12T18:59:01 IST" duration-ms="2016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_loginValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.tests.LoginTest@55fe41ea]" started-at="2023-10-12T18:59:01 IST" name="tearDown" finished-at="2023-10-12T18:59:05 IST" duration-ms="3595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.saucedemo.tests.LoginTest -->
     </test> <!-- Parallel Tests Edge -->
   </suite> <!-- Suite -->
 </testng-results>

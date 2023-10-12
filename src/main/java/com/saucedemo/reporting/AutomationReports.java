@@ -1,6 +1,7 @@
 package com.saucedemo.reporting;
 
 import java.io.File;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.apache.commons.io.FileUtils;
@@ -21,6 +22,8 @@ public class AutomationReports extends AutomationBase implements ITestListener {
 	public ExtentReports extent;
 	public ExtentTest test;
 	public ExtentSparkReporter spark;
+	// String reportPath;
+	String reportPath = System.getProperty("user.dir") + "/Reports/";
 
 	/**
 	 * onTestStart() - Allows you to perform actions or setup activities before a
@@ -85,9 +88,10 @@ public class AutomationReports extends AutomationBase implements ITestListener {
 				// Attach the screenshot
 				test.log(Status.FAIL, "Test failed: " + result.getName());
 				test.log(Status.FAIL, "Failure Details: " + result.getThrowable());
-				test.addScreenCaptureFromPath(destinationFile.getAbsolutePath(),result.getName());
-				//test.fail("Failure screenshot:",
-					//	MediaEntityBuilder.createScreenCaptureFromPath("./screenshot/" + "error_" + fileName).build());
+				test.addScreenCaptureFromPath(destinationFile.getAbsolutePath(), result.getName());
+				// test.fail("Failure screenshot:",
+				// MediaEntityBuilder.createScreenCaptureFromPath("./screenshot/" + "error_" +
+				// fileName).build());
 			} else {
 				System.err.println("WebDriver is null.");
 			}
@@ -129,12 +133,6 @@ public class AutomationReports extends AutomationBase implements ITestListener {
 	public void onStart(ITestContext context) {
 
 		try {
-			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
-
-			Date date = new Date();
-			String timestamp = dateFormat.format(date);
-
-			String reportPath = System.getProperty("user.dir") + "\\report\\" + "Report_" + timestamp + ".html";
 			spark = new ExtentSparkReporter(reportPath);
 
 			spark.config().setEncoding("utf-8");
@@ -145,9 +143,9 @@ public class AutomationReports extends AutomationBase implements ITestListener {
 			extent = new ExtentReports();
 			extent.attachReporter(spark);
 
-			extent.setSystemInfo("QA", "Anish");
+			extent.setSystemInfo("Test Lead", "AnishKumar V");
 			extent.setSystemInfo("Company", "Aspire Systems");
-			extent.setSystemInfo("Build No", "v2.8");
+			extent.setSystemInfo("Build No", "v2.9");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -167,7 +165,16 @@ public class AutomationReports extends AutomationBase implements ITestListener {
 	@Override
 	public void onFinish(ITestContext context) {
 		try {
+
 			extent.flush();
+			/// Report TimeStamp
+			DateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy_HH-mm-ss");
+			Date date = new Date();
+			String filePathdate = dateFormat.format(date).toString();
+			String actualReportPath = reportPath + "index.html";
+			new File(actualReportPath).renameTo(new File(
+					System.getProperty("user.dir") + "/Reports/" + "Automation_Report_" + filePathdate + ".html"));
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

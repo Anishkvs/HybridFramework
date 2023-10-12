@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Parallel Tests Edge</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 12 15:05:50 IST 2023</td>
+<td>Started on:</td><td>Thu Oct 12 18:58:45 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>39 seconds (39468 ms)</td>
+<tr><td>Total time:</td><td>68 seconds (68515 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,143 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC024_verifyContinueButtonWithoutPostalCode()'><b>TC024_verifyContinueButtonWithoutPostalCode</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:23)
-	at com.saucedemo.tests.ProductTest.TC024_verifyContinueButtonWithoutPostalCode(ProductTest.java:178)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1938377818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1938377818'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:23)
-	at com.saucedemo.tests.ProductTest.TC024_verifyContinueButtonWithoutPostalCode(ProductTest.java:178)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>2</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC030_verifyThankYouMessageInOverviewPage()'><b>TC030_verifyThankYouMessageInOverviewPage</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td><div><pre>java.lang.AssertionError: expected [Thank you for your order!] but found [[[FirefoxDriver: firefox on windows (cdc02391-e596-4e8b-b280-37ac50f5f86f)] -&gt; xpath: //h2[contains(text(),&apos;Thank you for your order!&apos;)]]]
-	at com.saucedemo.keywords.Keywords.assertEquals(Keywords.java:230)
-	at com.saucedemo.pages.CompletePage.verifyThankYouMessage(CompletePage.java:17)
-	at com.saucedemo.tests.ProductTest.TC030_verifyThankYouMessageInOverviewPage(ProductTest.java:220)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1086350168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1086350168'><pre>java.lang.AssertionError: expected [Thank you for your order!] but found [[[FirefoxDriver: firefox on windows (cdc02391-e596-4e8b-b280-37ac50f5f86f)] -&gt; xpath: //h2[contains(text(),&apos;Thank you for your order!&apos;)]]]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:644)
-	at com.saucedemo.keywords.Keywords.assertEquals(Keywords.java:230)
-	at com.saucedemo.pages.CompletePage.verifyThankYouMessage(CompletePage.java:17)
-	at com.saucedemo.tests.ProductTest.TC030_verifyThankYouMessageInOverviewPage(ProductTest.java:220)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC023_verifyContinueButtonWithoutLastName()'><b>TC023_verifyContinueButtonWithoutLastName</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:22)
-	at com.saucedemo.tests.ProductTest.TC023_verifyContinueButtonWithoutLastName(ProductTest.java:167)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace497104907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace497104907'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at com.saucedemo.pages.CheckOutInfoPage.verifyCart(CheckOutInfoPage.java:22)
-	at com.saucedemo.tests.ProductTest.TC023_verifyContinueButtonWithoutLastName(ProductTest.java:167)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>2</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -213,95 +76,135 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC014_sortDescendingOrder()'><b>TC014_sortDescendingOrder</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>2</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC025_verifyContinueButtonWithAllDetails()'><b>TC025_verifyContinueButtonWithAllDetails</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>5</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC018_verifyRemoveButton()'><b>TC018_verifyRemoveButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>2</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC012_deSelectAddToCart()'><b>TC012_deSelectAddToCart</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td title='com.saucedemo.tests.ProductTest.TC012_deSelectAddToCart()'><b>TC012_deSelectAddToCart</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: De-select a product from the cart.</td>
 <td></td>
 <td>1</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC022_verifyContinueButtonWithoutFirstName()'><b>TC022_verifyContinueButtonWithoutFirstName</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>3</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC007_navigateBrowserBack()'><b>TC007_navigateBrowserBack</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td title='com.saucedemo.tests.LoginTest.TC002_invalidCredentials()'><b>TC002_invalidCredentials</b><br>Test class: com.saucedemo.tests.LoginTest<br>Test method: Verify login functionality with invalid credentials.</td>
 <td></td>
 <td>2</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<td>com.saucedemo.tests.LoginTest@55fe41ea</td></tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC019_verifyCheckoutButton()'><b>TC019_verifyCheckoutButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td title='com.saucedemo.tests.LoginTest.TC004_validPasswordInvalidUsername()'><b>TC004_validPasswordInvalidUsername</b><br>Test class: com.saucedemo.tests.LoginTest<br>Test method: Verify login functionality with a valid password and an invalid username.</td>
+<td></td>
+<td>1</td>
+<td>com.saucedemo.tests.LoginTest@55fe41ea</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC019_verifyCheckoutButton()'><b>TC019_verifyCheckoutButton</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify the checkout button from the cart page.</td>
 <td></td>
 <td>0</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
 <tr>
-<td title='com.saucedemo.tests.ProductTest.TC013_sortAscendingOrder()'><b>TC013_sortAscendingOrder</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC020_verifyContinueShoppingButton()'><b>TC020_verifyContinueShoppingButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC026_verifyFinishButtonInCheckoutPage()'><b>TC026_verifyFinishButtonInCheckoutPage</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC017_verifyShoppingCartButton()'><b>TC017_verifyShoppingCartButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC016_sortHighToLow()'><b>TC016_sortHighToLow</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC027_verifyCancelButtonInCheckoutPage()'><b>TC027_verifyCancelButtonInCheckoutPage</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC008_addToCart()'><b>TC008_addToCart</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC021_verifyCancelButton()'><b>TC021_verifyCancelButton</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC015_sortLowToHigh()'><b>TC015_sortLowToHigh</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>0</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC009_addToAllCart()'><b>TC009_addToAllCart</b><br>Test class: com.saucedemo.tests.ProductTest</td>
-<td></td>
-<td>3</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
-<tr>
-<td title='com.saucedemo.tests.ProductTest.TC006_navigateBrowserForward()'><b>TC006_navigateBrowserForward</b><br>Test class: com.saucedemo.tests.ProductTest</td>
+<td title='com.saucedemo.tests.ProductTest.TC018_verifyRemoveButton()'><b>TC018_verifyRemoveButton</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify the remove button from the product page.</td>
 <td></td>
 <td>2</td>
-<td>com.saucedemo.tests.ProductTest@752325ad</td></tr>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC027_verifyCancelButtonInCheckoutPage()'><b>TC027_verifyCancelButtonInCheckoutPage</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify the cancel button in the checkout page.</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.LoginTest.TC005_loginWithoutCredentials()'><b>TC005_loginWithoutCredentials</b><br>Test class: com.saucedemo.tests.LoginTest<br>Test method: Verify login functionality without credentials.</td>
+<td></td>
+<td>1</td>
+<td>com.saucedemo.tests.LoginTest@55fe41ea</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC013_sortAscendingOrder()'><b>TC013_sortAscendingOrder</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Sort the product in ascending order.</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC016_sortHighToLow()'><b>TC016_sortHighToLow</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Sort the product price from high to low.</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC014_sortDescendingOrder()'><b>TC014_sortDescendingOrder</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Sort the product in descending order.</td>
+<td></td>
+<td>2</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC030_verifyThankYouMessageInOverviewPage()'><b>TC030_verifyThankYouMessageInOverviewPage</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify the 'Thank you' message in the overview page.</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC015_sortLowToHigh()'><b>TC015_sortLowToHigh</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Sort the product price from low to high.</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.LoginTest.TC003_validUsernameInvalidPassword()'><b>TC003_validUsernameInvalidPassword</b><br>Test class: com.saucedemo.tests.LoginTest<br>Test method: Verify login functionality with a valid username and an invalid password.</td>
+<td></td>
+<td>1</td>
+<td>com.saucedemo.tests.LoginTest@55fe41ea</td></tr>
+<tr>
+<td title='com.saucedemo.tests.LoginTest.TC001_loginValidCredentials()'><b>TC001_loginValidCredentials</b><br>Test class: com.saucedemo.tests.LoginTest<br>Test method: Verify login functionality.</td>
+<td></td>
+<td>2</td>
+<td>com.saucedemo.tests.LoginTest@55fe41ea</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC006_navigateBrowserForward()'><b>TC006_navigateBrowserForward</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify browser forward possibilities.</td>
+<td></td>
+<td>2</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC024_verifyContinueButtonWithoutPostalCode()'><b>TC024_verifyContinueButtonWithoutPostalCode</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify clicking on the continue button without a postal code.</td>
+<td></td>
+<td>5</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC008_addToCart()'><b>TC008_addToCart</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Add a product to the cart.</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC026_verifyFinishButtonInCheckoutPage()'><b>TC026_verifyFinishButtonInCheckoutPage</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify clicking on the finish button in the checkout page last name.</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC007_navigateBrowserBack()'><b>TC007_navigateBrowserBack</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify browser back possibilities.</td>
+<td></td>
+<td>2</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC020_verifyContinueShoppingButton()'><b>TC020_verifyContinueShoppingButton</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify the continue shopping button in the information page.</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC022_verifyContinueButtonWithoutFirstName()'><b>TC022_verifyContinueButtonWithoutFirstName</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify clicking on the continue button without user information.</td>
+<td></td>
+<td>3</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC021_verifyCancelButton()'><b>TC021_verifyCancelButton</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify the cancel button in the information page.</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC017_verifyShoppingCartButton()'><b>TC017_verifyShoppingCartButton</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Click on the shopping cart button in the product page.</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC009_addToAllCart()'><b>TC009_addToAllCart</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Add all the products to the cart.</td>
+<td></td>
+<td>2</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC023_verifyContinueButtonWithoutLastName()'><b>TC023_verifyContinueButtonWithoutLastName</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify clicking on the continue button without a last name.</td>
+<td></td>
+<td>5</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
+<tr>
+<td title='com.saucedemo.tests.ProductTest.TC025_verifyContinueButtonWithAllDetails()'><b>TC025_verifyContinueButtonWithAllDetails</b><br>Test class: com.saucedemo.tests.ProductTest<br>Test method: Verify clicking on the continue button with all details.</td>
+<td></td>
+<td>5</td>
+<td>com.saucedemo.tests.ProductTest@1ff4931d</td></tr>
 </table><p>
 </body>
 </html>
