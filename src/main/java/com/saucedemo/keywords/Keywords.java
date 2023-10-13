@@ -7,6 +7,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Properties;
+
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
@@ -224,10 +225,10 @@ public class Keywords {
 	 * @param string
 	 * @param unExpected
 	 */
-	public void assertEquals(String string, String Expected) {
+	public void assertEquals(String actual, String expected) {
 
 		try {
-			Assert.assertEquals(string, Expected);
+			Assert.assertEquals(actual, expected);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -289,10 +290,10 @@ public class Keywords {
 	 * @param Expected
 	 */
 
-	public void verifySoftAsserEqual(String Actual, String Expected) {
+	public void verifySoftAssertEqual(String actual, String expected) {
 		try {
 			SoftAssert softAssert = new SoftAssert();
-			softAssert.assertEquals(Actual, Expected);
+			softAssert.assertEquals(actual, expected);
 			softAssert.assertAll();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -425,7 +426,7 @@ public class Keywords {
 		ArrayList<String> a = new ArrayList<String>();
 
 		FileInputStream fis = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\saucedemo.xlsx");
+				System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\saucedemo.xlsx");
 
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
@@ -511,5 +512,24 @@ public class Keywords {
 			e.printStackTrace();
 		}
 	}
-
+	
+	/**
+	 * getText() method is used to get the text from the locator.
+	 * @author Anish
+	 * @since 13/October/2023
+	 * @param driver
+	 * @param element
+	 * @return
+	 */
+	public String getText(WebDriver driver, WebElement element) {
+	    try {
+	        return element.getText();
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	        return null;
+	    }
+	}
 }
+	
+
+

@@ -7,8 +7,11 @@
       <class name="com.saucedemo.tests.ProductTest">
         <methods>
           <include name="TC030_verifyThankYouMessageInOverviewPage"/>
+          <include name="TC024_verifyContinueButtonWithoutPostalCode"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="TC026_verifyFinishButtonInCheckoutPage"/>
+          <include name="TC025_verifyContinueButtonWithAllDetails"/>
+          <include name="TC023_verifyContinueButtonWithoutLastName"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.saucedemo.tests.ProductTest -->

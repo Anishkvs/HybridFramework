@@ -34,12 +34,6 @@ public class ProductTest extends TestRunner {
 
 	}
 
-	/**
-	 * @
-	 * @throws InterruptedException
-	 * @throws IOException
-	 */
-
 	@Test(priority = 1, description = "Sort the product in descending order.")
 	public void TC014_sortDescendingOrder() throws InterruptedException, IOException {
 
@@ -83,25 +77,22 @@ public class ProductTest extends TestRunner {
 
 	@Test(priority = 5, description = "Add a product to the cart.")
 	public void TC008_addToCart() throws InterruptedException, IOException {
-		// test = extent.createTest("TC008_Choose the product");
+
 		product.addToCartBackPack(driver);
 
 	}
 
 	@Test(priority = 6, description = "Add all the products to the cart.")
 	public void TC009_addToAllCart() throws InterruptedException, IOException {
-		// test = extent.createTest("TC008_Choose the product");
-
 		System.out.println("Choose the product");
 		product.addToCartBikeLight(driver);
 		product.addToCartTShirt(driver);
 		product.addToCartFleeceJacket(driver);
-		//page.scroll(driver, -450);
 		scrollDownProduct();
 	}
 
 	private void scrollDownProduct() throws InterruptedException, IOException {
-		// scroll down Product page
+
 		System.out.println("Scroll Down");
 		;
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
@@ -113,7 +104,6 @@ public class ProductTest extends TestRunner {
 	@Test(priority = 7, description = "De-select a product from the cart.")
 	public void TC012_deSelectAddToCart() throws InterruptedException, IOException {
 
-		// test = extent.createTest("TC012: de-Select Add To Cart");
 		System.out.println("Scroll Up");
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
@@ -221,7 +211,7 @@ public class ProductTest extends TestRunner {
 	
 	@Test(priority = 21, description = "Verify the 'Thank you' message in the overview page.")
 	public void TC030_verifyThankYouMessageInOverviewPage() {
-		complete.verifyThankYouMessage(driver);
+		complete.verifyThankYouMessage(this.driver);
 		
 	}
 	

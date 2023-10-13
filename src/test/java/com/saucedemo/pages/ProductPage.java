@@ -115,7 +115,7 @@ public class ProductPage {
 	 * @throws IOException
 	 */
 	public void scrolldown(WebDriver driver) throws IOException {
-		// Scroll down and click the product
+
 		locator.click(driver, "scrolldownToLabs_ID");
 	}
 

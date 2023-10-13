@@ -1,16 +1,15 @@
 package com.saucedemo.pages;
 
 import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.WebElement;
 import com.saucedemo.keywords.Keywords;
 
 public class CheckOutInfoPage {
 
 	Keywords locator = new Keywords();
-
+	WebElement element;
 	/**
 	 * Method for verifyCart() is used to enter the firstname, lastname and postal
 	 * code to the Your information page
@@ -31,7 +30,8 @@ public class CheckOutInfoPage {
 		driver.findElement(By.id("first-name")).sendKeys(firstname);
 		driver.findElement(By.id("last-name")).sendKeys(lastname);
 		driver.findElement(By.id("postal-code")).sendKeys(Postal);
-
+		
+	
 	}
 
 	/**

@@ -1,7 +1,6 @@
 package com.saucedemo.pages;
 
 import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import com.saucedemo.keywords.Keywords;
@@ -37,7 +36,6 @@ public class CheckOutOverviewPage {
 	public void finishButtonInCheckoutPage(WebDriver driver) throws IOException {
 
 		 locator.click(driver, "finishButtonInCheckoutPage_XPATH");
-		//driver.findElement(By.xpath("//button[@id='finish']")).click();
 
 	}
 

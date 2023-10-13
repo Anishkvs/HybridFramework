@@ -2,7 +2,6 @@ package com.saucedemo.pages;
 
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import com.saucedemo.keywords.Keywords;
 
 public class LoginPage {
@@ -39,10 +38,10 @@ public class LoginPage {
 	 */
 
 	public void verifyHomePageTitle(WebDriver driver) {
-
+		
 		String ExpectedTitle = "Swag Labs";
 		String ActualTitle = driver.getTitle();
-		Assert.assertEquals(ActualTitle, ExpectedTitle);
+		locator.assertEquals(ActualTitle, ExpectedTitle);
 		System.out.println("Launch Product page");
 
 	}

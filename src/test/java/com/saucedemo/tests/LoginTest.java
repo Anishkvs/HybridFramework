@@ -2,10 +2,8 @@ package com.saucedemo.tests;
 
 import java.io.IOException;
 import java.util.ArrayList;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import com.saucedemo.keywords.Keywords;
 import com.saucedemo.pages.LoginPage;
 import com.saucedemo.runner.TestRunner;
